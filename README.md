@@ -1,6 +1,8 @@
 # clean-architecture-in-python
 One of the best approach to build software systems
 
+![Drag Racing](https://habrastorage.org/web/fe8/c82/a32/fe8c82a32b1548b1a297187e24ae755a.png)
+
 # Entities:
 These are the enterprise business objects of your application. These should not be affected by any change external to them, and these should be the most stable code within your application.
 
