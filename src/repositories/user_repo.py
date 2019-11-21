@@ -29,3 +29,6 @@ class UserRepo(object):
     def is_user_name_exits():
         # write a query to check the user name existence in db
         pass
+
+    def validate_user(user_name, password):
+        pass
