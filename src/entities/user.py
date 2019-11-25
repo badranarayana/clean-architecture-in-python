@@ -18,8 +18,16 @@ class User(object):
         if not self.password:
             raise ValueError("password is empty")
 
+        if not self.validate_password_policy:
+            raise ValueError("password is not meet with password requirments")
+
         # use some password encryption algorithm as per your organization standard
         # returning dummy encrypted password, 
         return "hkhdde9ldajaldjqemamc"
 
-        
+    def validate_password_policy(self):
+        # we can apply all password rules here
+        if len(self.password) <= 8:
+            return False
+
+        return True

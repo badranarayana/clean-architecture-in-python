@@ -6,8 +6,9 @@ from src.models.user_model import User
 
 class UserRepo(object):
      """
-     This class is write all user specific queries
+     This class is to write all user specific queries
      """
+
     def get(id):
         # use the ORM models to query the database
         return User.objects.filter(id=id)
@@ -16,7 +17,7 @@ class UserRepo(object):
         user = User(user_name=user_name, password=password)
         user.save()
 
-    def getAll():
+    def get_all():
         return User.objects.all()
 
     def get_active_users():
